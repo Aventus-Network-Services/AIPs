@@ -4,12 +4,12 @@ Thank you for considering to help out with the source code! We welcome contribut
 
 If you'd like to contribute, please follow these guidelines:
 
-- Submission Procedure / Contributing
 - Fork this repository
 - Create a new branch and switch to it
 - Create a copy of the [template.MD](./AIP/template.md) file
-- Create a draft proposal under the [**submissions**](./AIP/submissions) folder
+- Create a draft proposal under the [**submissions**](./AIP/submissions) folder and name the folder **AIP-draft-[your-branch-name]**
 - Fill out the template with the details of your AIP. If your submission includes images, images should be integrated in the src folder.
+- Rename your template file to the same name as the your proposal folder and place the template file in the folder.
 - Once you have completed the application, click on "create new pull request".
 
 [Here](https://guides.github.com/activities/forking/) is a more detailed guide on how to submit a pull request. Ensure your code runs without errors before submitting a pull request.
