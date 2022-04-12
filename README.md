@@ -15,7 +15,7 @@ As of now, we loosely accept proposals that we might not actively endorse, do no
 - [Aventus Improvement Proposals (AIPs)](#aventus-improvement-proposals-aips)
   - [:clipboard: Types of AIP](#clipboard-types-of-aip)
   - [:pencil: Contributing](#pencil-contributing)
-  - [:signal-strength: Proposal Stages](#signal-strength-proposal-stages)
+  - [:signal_strength: Proposal Stages](#signal_strength-proposal-stages)
 
 ## :clipboard: Types of AIP
 
@@ -30,8 +30,7 @@ Before you start writing a formal AIP, you should make sure you're certain your 
 
 Read our contribution guide [HERE](./contributing.md)
 
-## :signal-strength: Proposal Stages  
-
+## :signal_strength: Proposal Stages  
 
 |Status| Description |
 | ----: | :------ |
@@ -42,7 +41,6 @@ Read our contribution guide [HERE](./contributing.md)
 | On Hold | Work on this has been halted either due to the author/submitted putting the proposal on hold or a decision was made to halt it. |
 | Obsolete | A more recent proposal supersedes it in capabilities and value. |
 | Rejected | Concerns have been raised around the proposal. |
-
 
 ## Management  
 
