@@ -1,0 +1,7 @@
+---
+layout: page
+title: Ecosystem
+---
+
+{% assign aips=site.pages|where:"type","Standards Track"|where:"category","Ecosystem" %}
+{% include aiptable.html aips=aips %}

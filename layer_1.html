@@ -1,0 +1,7 @@
+---
+layout: page
+title: Layer1
+---
+
+{% assign aips=site.pages|where:"type","Standards Track"|where:"category","Layer1" %}
+{% include aiptable.html aips=aips %}
