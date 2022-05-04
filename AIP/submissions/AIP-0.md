@@ -3,7 +3,7 @@ aip: 0
 title: AIP Purpose and Guidelines
 status: Active
 type: Informational
-author: Emmanuel Ngubo
+author: Emmanuel Ngubo (@dr-ngubo)
 created: 2022-04-05
 ---
 
@@ -39,7 +39,7 @@ An AIP must meet certain minimum criteria. It must be a clear and complete descr
 
 ### Shepherding an AIP
 
-Parties involved in the process are you, the *AIP author*, the [*AIP editors*](#AIP-editors), and the [*Aventus Core Developers*](https://github.com/Aventus/pm).
+Parties involved in the process are you, the *AIP author*, the AIP editors, and the Aventus Core Developers.
 
 Before you begin writing a formal AIP, you should vet your idea. Ask the Aventus community first if an idea is original to avoid wasting time on something that will be rejected based on prior research. It is thus recommended to open a discussion thread on [the Aventus Telegram channel](https://t.me/Aventus_Official) to do this.
 
