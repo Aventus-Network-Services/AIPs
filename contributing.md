@@ -7,10 +7,9 @@ If you'd like to contribute, please follow these guidelines:
 - Fork this repository
 - Create a new branch and switch to it
 - Create a copy of the [template.MD](./AIP/template.md) file
-- Create a draft proposal under the [**submissions**](./AIP/submissions) folder and name the folder **AIP-draft-[your-branch-name]**
+- Create a draft proposal under the [**submissions**](./AIP/submissions) folder and name your MD file as **AIP-draft-[your-branch-name]**
 - Fill out the template with the details of your AIP. If your submission includes images, images should be integrated in the src folder.
-- Rename your template file to the same name as the your proposal folder and place the template file in the folder.
-- Once you have completed the application, click on "create new pull request".
+- Once you have completed the application, create a pull request.
 
 [Here](https://guides.github.com/activities/forking/) is a more detailed guide on how to submit a pull request. Ensure your code runs without errors before submitting a pull request.
 
@@ -22,10 +21,10 @@ There are a few basic ground-rules for contributors (including the maintainer(s)
 2. **Non-master branches**, prefixed with a short name moniker (e.g. `<initials>-<feature>`) must be used for ongoing work.
 3. **All modifications** must be made in a **pull-request** to solicit feedback from other contributors.
 
-
 ## Changes to this arrangement
+
 This contribution guideline is subject to changes where it is believed that there is something valuable to add or change.
 
 ## Heritage
 
-These contributing guidelines are modified from the "OPEN Open Source Project" guidelines for the Level project: [https://github.com/Level/community/blob/master/CONTRIBUTING.md](https://github.com/Level/community/blob/master/CONTRIBUTING.md)
+These contributing guidelines are modified from the "OPEN Open Source Project" guidelines for the [Level project](https://github.com/Level/community/blob/master/CONTRIBUTING.md).

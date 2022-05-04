@@ -4,29 +4,29 @@ layout: default
 
 {% if page.status == "Draft" %}
 <div class="draft">
-    ⚠️ This EIP is not recommended for general use or implementation as it is likely to change.
+    ⚠️ This AIP is not recommended for general use or implementation as it is likely to change.
 </div>
 {% elsif page.status == "Review" %}
 <div class="review">
-    📖 This EIP is in the review stage. It is subject to changes and feedback is appreciated.
+    📖 This AIP is in the review stage. It is subject to changes and feedback is appreciated.
 </div>
 {% elsif page.status == "Last Call" %}
 <div class="lastcall">
-    📢 This EIP is in the last call for review stage. The authors wish to finalize the EIP and appreciate feedback.
+    📢 This AIP is in the last call for review stage. The authors wish to finalize the AIP and appreciate feedback.
 </div>
 {% elsif page.status == "Stagnant" %}
 <div class="stagnant">
-    🚧 This EIP had no activity for at least 6 months.
+    🚧 This AIP had no activity for at least 6 months.
 </div>
 {% elsif page.status == "Withdrawn" %}
 <div class="withdrawn">
-    🛑 This EIP has been withdrawn.
+    🛑 This AIP has been withdrawn.
 </div>
 {% endif %}
 
 <div class="home">
     <h1 class="page-heading">
-        EIP-{{ page.eip | xml_escape }}: {{ page.title | xml_escape }}
+        AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape }}
         <a href="{{site.github.repository_url}}/blob/master/{{page.path}}"><svg role="img" aria-label="Source"
                 xmlns="https://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
                 <title>Source</title>
@@ -80,7 +80,7 @@ layout: default
         {% if page.requires != undefined %}
         <tr>
             <th>Requires</th>
-            <td>{% include eipnums.html eips=page.requires %}</td>
+            <td>{% include aipnums.html aips=page.requires %}</td>
         </tr>
         {% endif %}
         {% if page["withdrawal-reason"] != undefined %}
@@ -104,10 +104,10 @@ layout: default
     IEEE specification for reference formatting:
     https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf
     {% endcomment %}
-    <p>{% include authorlist.html authors=page.author %}, "EIP-{{ page.eip | xml_escape }}: {{ page.title | xml_escape
+    <p>{% include authorlist.html authors=page.author %}, "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape
         }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}," <em>Ethereum Improvement
-            Proposals</em>, no. {{ page.eip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial].
-        Available: https://eips.ethereum.org/EIPS/eip-{{ page.eip | xml_escape }}.</p>
+            Proposals</em>, no. {{ page.aip | xml_escape }}, {{ page.created | date: "%B %Y" }}. [Online serial].
+        Available: https://aips.ethereum.org/AIPS/aip-{{ page.aip | xml_escape }}.</p>
 </div>
 {% comment %}
 Article schema specification:
@@ -117,9 +117,9 @@ https://schema.org/TechArticle
   {
     "@context": "http://schema.org",
     "@type": "TechArticle",
-    "headline": "EIP-{{ page.eip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}",
+    "headline": "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}",
     "author": "{{ page.author }}",
-    "name": "EIP-{{ page.eip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}",
+    "name": "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}",
     "dateCreated": "{{ page.created | date: "%Y-%m-%d" }}",
     "datePublished": "{{ page.created | date: "%Y-%m-%d" }}",
 {% if page["discussions-to"] != undefined %}

@@ -32,6 +32,7 @@ header_pages:
     - layer_1.html
     - interface.html
     - ecosystem.html
+    - informational.html
 
 # Build settings
 highlighter: rouge
