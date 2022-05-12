@@ -1,7 +1,9 @@
 ---
-layout: page
-title: Informational
+layout: default
+title: Informational Proposals
 ---
+
+<h1>{{ page.title }}</h1>
 
 {% assign aips=site.pages|where:"type","Informational" %}
 {% include aiptable.html aips=aips %}

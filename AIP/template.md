@@ -1,12 +1,12 @@
 ---
-aip: <to be assigned>
+aip: <to be assigned by the editors>
 title: <The AIP title is a few words, not a complete sentence>
 description: <Description is one full (short) sentence>
 author: <a comma separated list of the author's or authors' name + GitHub username (in parenthesis), or name and email (in angle brackets).  Example, FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
 status: Draft [All new proposals should be set to Draft]
 type: <Core, Layer 1, Interface, Ecosystem, or Informational>
 created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-requires (*optional): <EIP number(s)>
+requires: <EIP number(s)> (*optional)
 ---
 
 This is the suggested template for new AIPs.

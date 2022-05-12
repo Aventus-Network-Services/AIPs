@@ -1,4 +1,5 @@
 ---
+layout: default
 aip: 0
 title: AIP Purpose and Guidelines
 status: Active
@@ -6,6 +7,7 @@ type: Informational
 author: Emmanuel Ngubo (@dr-ngubo)
 created: 2022-04-05
 ---
+
 
 ## What is an AIP?
 
