@@ -1,4 +1,5 @@
 ---
+layout: default
 aip: 1
 title: NFT Standard
 status: Active
@@ -6,6 +7,7 @@ type: Core
 author: Aventus Network <info@aventus.io>
 created: 2022-04-05
 ---
+
 
 ## Abstract/Summary
 
@@ -45,7 +47,63 @@ fn mint_batch_nft(
 
 The above function signature describes the functionality of minting batch NFT on the Aventus blockchain. There is just one addition to the function signature for the batch NFT which is the batch_id which identifies the batch of NFTs.
 
-The two code snippets above are function signatures. The code block below is a direct snippet from the pallet and the comments signified by the preceding “///” are there to provide you with a clearer insight into the workings of the line of code.
+The two code snippets above are function signatures.
+
+NFT details are understood as two structs, the first contains "external" properties of the NFT such as the owner address `AccountId`, the external reference `unique_external_ref`, etc.
+
+```sh
+pub struct Nft<AccountId: Member> {
+    /// Unique identifier of a nft
+    pub nft_id: NftId,
+    /// Id of an info struct instance
+    pub info_id: NftInfoId,
+    /// Unique reference to the NFT asset stored off-chain
+    pub unique_external_ref: Vec<u8>,
+    /// Transfer nonce of this NFT
+    pub nonce: u64,
+    /// Owner account address of this NFT
+    pub owner: AccountId,
+    /// Flag to indicate if the vendor has marked this NFT as transferrable or not
+    ///  - false: able to be transfered (default)
+    ///  - true: not able to be transfered
+    pub is_locked: bool,
+}
+```
+
+The second struct defines the lower level info properties of the NFT such as the royalties `royalties` and total supply `total_supply`, etc.
+
+```sh
+pub struct NftInfo {
+    /// Unique identifier of this information
+    pub info_id: NftInfoId,
+    /// Batch Id defined by client
+    pub batch_id: Option<NftBatchId>,
+    /// Royalties payment rate for the nft.
+    pub royalties: Vec<Royalty>,
+    /// Total supply of NFTs in this collection:
+    ///  - 1: it is for a singleton
+    ///  - >1: it is for a batch
+    pub total_supply: u64,
+    /// Minters tier 1 address
+    pub t1_authority: H160,
+}
+```
+
+When a new single NFT is minted, the `batch_id` in the return block below is set to None as the single NFT would not be part of a batch of NFTs.
+
+```sh
+pub fn new(info_id: NftInfoId, royalties: Vec<Royalty>, t1_authority: H160) -> Self {
+    return NftInfo {
+        info_id,
+        batch_id: None,
+        royalties,
+        total_supply: 1u64,
+        t1_authority,
+    };
+}
+```
+
+The code block below is a direct snippet from the pallet and the comments signified by the preceding “///” are there to provide you with a clearer insight into the workings of the line of code.
 
 ```sh
 decl_storage! {
