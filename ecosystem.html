@@ -1,0 +1,19 @@
+---
+layout: default
+title: Ecosystem
+---
+
+<h1>{{ page.title }}</h1>
+
+<h3>See an area for improvement?</h3>
+
+Be the first to contribute a proposal to improve Aventus Ecosystem.
+<p>
+    To understand more about the current state of the Aventus network, check out our
+    <a
+        href="https://github.com/AventusProtocolFoundation/docs/blob/master/resources/Aventus%20Network%20Technical%20Whitepaper.pdf">technical
+        whitepaper</a>
+</p>
+
+{% assign aips=site.pages|where:"type","Ecosystem" %}
+{% include aiptable.html aips=aips %}

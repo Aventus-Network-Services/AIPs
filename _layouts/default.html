@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+{% include head.html %}
+
+<iv>
+
+    <header>
+        <a href="/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+    </header>
+
+    {% if page.status == "Draft" %}
+    <div class="draft">
+        ⚠️ This AIP is not recommended for general use or implementation as it is likely to change.
+    </div>
+    {% elsif page.status == "Community Review" %}
+    <div class="review">
+        📖 This AIP is in the review stage. It is subject to changes and feedback is appreciated.
+    </div>
+    {% elsif page.status == "Proposed" %}
+    <div class="proposed">
+        📢 This has been tested in a sandbox environment and is believed to be working. Also, an approved plan to implement this on the mainnet has been constructed and accepted. Further changes are unlikely at this stage
+    </div>
+    {% elsif page.status == "Active" %}
+    <div class="active">
+        🚀 This AIP is active and implemented on the network.
+    </div>
+    {% elsif page.status == "On Hold" %}
+    <div class="on_hold">
+        🚧 This AIP is now on hold.
+    </div>
+    {% elsif page.status == "Obsolete" %}
+    <div class="obsolete">
+        ⏱ A more recent proposal supersedes it in capabilities and value.
+    </div>
+    {% elsif page.status == "Rejected" %}
+    <div class="rejected">
+        🛑 Concerns have been raised around the proposal.
+    </div>
+    {% endif %}
+
+    start banner
+     <div id="banner">
+        {% if page.status == undefined %}
+        <a href="{{ site.github.aip_repo }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% elsif page.status != undefined %}
+        <a href="{{ site.github.aip_repo }}/blob/master/AIP/submissions/AIP-{{ page.aip}}/AIP-{{ page.aip}}.md" class="button fork"><strong>View On GitHub</strong></a>
+        {% endif %}
+
+        <a href="/" style="margin-right:20px; margin-left: -410px;" class="button fork" ><strong>Home</strong></a>
+
+        <span class="downloads">
+            <a href="../../all.html" class="button"><strong>All</strong></a>
+            <a href="../../core.html" class="button"><strong>Core</strong></a>
+            <a href="../../layer_1.html" class="button"><strong>Layer 1</strong></a>
+            <a href="../../interface.html" class="button"><strong>Interface</strong></a>
+            <a href="../../ecosystem.html" class="button"><strong>Ecosystem</strong></a>
+            <a href="../../informational.html" class="button"><strong>Informational</strong></a>
+        </span>
+        <!-- <a href="https://www.aventus.io/"><span id="logo"></a> -->
+    </div>
+    <!-- end banner -->
+
+    <div class="wrapper">
+        <nav>
+            <ul></ul>
+        </nav>
+        <section>
+            {% if page.status != undefined %}
+            <h1>{{ page.title }}</h1>
+            
+            <table>
+                {% if page.aip != undefined %}
+                <tr>
+                    <th>AIP</th>
+                    <td>{{ page.aip | xml_escape }}</td>
+                </tr>
+                {% endif %}
+                {% if page.title != undefined and page.description != undefined %}
+                <tr>
+                    <th>Title</th>
+                    <td>{{ page.title | xml_escape }}</td>
+                </tr>
+                {% endif %}
+                {% if page.description != undefined %}
+                <tr>
+                    <th>Author</th>
+                    <td>{{ page.author | xml_escape }}</td>
+                </tr>
+                {% elsif page.description == undefined %}
+                <tr>
+                    <th>Author</th>
+                    <td>{% include authorlist.html authors=page.author %}</td>
+                </tr>
+                {% endif %}
+                <tr>
+                    <th>Status</th>
+                    <td>{{ page.status | xml_escape }}</td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>{{ page.type | xml_escape }}</td>
+                </tr>
+                <tr>
+                    <th>Created</th>
+                    <td>{{ page.created | xml_escape }}</td>
+                </tr>
+                {% if page.updated != undefined %}
+                <tr>
+                    <th>Updated</th>
+                    <td>{{ page.updated | xml_escape }}</td>
+                </tr>
+                {% endif %}
+                {% if page.requires != undefined and page.description != undefined %}
+                <tr>
+                    <th>Requires</th>
+                    <td>{{ page.requires | xml_escape }}</td>
+                </tr>
+                {% elsif page.requires != undefined and page.description == undefined %}
+                <tr>
+                    <th>Requires</th>
+                    <td>{% include aipnums.html aips=page.requires %}</td>
+                </tr>
+                {% endif %}
+            </table>
+            {% endif %}
+
+            <!-- {{ content }} -->
+
+            {% include anchor_headings.html html=content anchorClass="anchor-link" beforeHeading=true %}
+            {% if page.status == "Active" or page.status == "Obsolete" or page.status == "Draft" %}
+            <h2>Citation</h2>
+            <p>Please cite this document as:</p>
+            {% comment %}
+            IEEE specification for reference formatting:
+            https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf
+            {% endcomment %}
+            <p>{% include authorlist.html authors=page.author %}, "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape
+                }}{% if page.status == "Draft" or page.status == "" %} [DRAFT]{% endif %}," <em>Aventus Improvement
+                    Proposals</em>, {{ page.created | date: "%B %Y" }}. [Online serial].
+                <!-- Available: https://aips.aventus.org/AIP/submissions/AIP-{{ page.aip | xml_escape }}. -->
+            </p>
+            {% endif %}
+        </section>
+        <footer>
+            {% if site.github.is_project_page %}
+            <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+            {% endif %}
+            <p>Check out our
+            <a href="https://github.com/AventusProtocolFoundation/docs/blob/master/resources/Aventus%20Network%20Technical%20Whitepaper.pdf">WHITEPAPER</a>, <a href="https://www.aventus.io/">Website</a> & <a href="https://aventus-network-services.github.io/avn-gateway-docs/">API</a></p>
+        </footer>
+    </div>
+
+</body>
+
+{% comment %}
+Article schema specification:
+https://schema.org/TechArticle
+{% endcomment %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "TechArticle",
+    "headline": "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" or page.status == "Last Call" %} [DRAFT]{% endif %}",
+    "author": "{{ page.author }}",
+    "name": "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape }}{% if page.status == "Draft" %} [DRAFT]{% endif %}",
+    "dateCreated": "{{ page.created | date: "%Y-%m-%d" }}",
+    "datePublished": "{{ page.created | date: "%Y-%m-%d" }}",   
+    "inLanguage": "en-US",
+    "license": "#copyright",
+    "copyrightYear": "{{ page.created | date: "%Y" }}"
+  }
+</script>
+
+</html>

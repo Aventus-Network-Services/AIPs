@@ -23,6 +23,7 @@ As of now, we loosely accept proposals that we might not actively endorse, do no
 - Layer 1 - Improvements to the smart contracts on Layer 1.
 - Interface - Improvements to the communication mechanism between the Aventus blockchain and other blockchain networks such as Ethereum, Polkadot, etc.
 - Ecosystem - Improvements to the various tools built on the network such as Explorer, Wallet, Governance, etc.
+- Informational - Provides information about processes including changes to the AIP contribution process.
 
 ## :pencil: Contributing
 

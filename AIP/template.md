@@ -1,10 +1,20 @@
-
-# Title 
-
-| AIP Number | Title | Author | Status | Category | Created |
-|---|---| --- | --- | --- | --- |
-|To be assigned later(=number of the initial PR to the AIPs repo) |Needs to be concise and clear (44 characters or less) | Name and Email or GitHub Username of author(s) e.g. FirstName LastName <jane@doe.com> or (@GitHubUsername) | Draft [All new proposals should be set to Draft] | [Core, Layer 1, Interface, Ecosystem] | [yyyy-mm-dd]
 ---
+aip: <to be assigned by the editors>
+title: <The AIP title is a few words, not a complete sentence>
+description: <Description is one full (short) sentence>
+author: <a comma separated list of the author's or authors' name + GitHub username (in parenthesis), or name and email (in angle brackets).  Example, FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
+status: Draft [All new proposals should be set to Draft]
+type: <Core, Layer 1, Interface, Ecosystem, or Informational>
+created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
+requires: <EIP number(s)> (*optional)
+---
+
+This is the suggested template for new AIPs.
+
+Note that an AIP number will be assigned by an editor. When opening a pull request to submit your EIP, please use an abbreviated title in the filename, `eip-draft_title_abbrev.md`.
+
+The title should be 44 characters or less. It should not repeat the EIP number in title, irrespective of the category.
+
 ## Abstract/Summary
 
 A short paragraph providing technical summary or brief of the standard and the addressed issue(s). This abstract should be in human-readable format and should be as clear and concise as possible.
