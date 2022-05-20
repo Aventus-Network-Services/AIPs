@@ -11,6 +11,7 @@ gem "jekyll", "~> 4.2.2"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 gem "jekyll-remote-theme"
+gem 'jekyll-relative-links'
 gem 'rubyzip', '~> 2.3', '>= 2.3.2'
 gem 'addressable', '~> 2.8'
 gem 'jekyll-sass-converter', '~> 2.2'

@@ -210,27 +210,6 @@ header {
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
 
-  .white-button {
-    border: 1px solid #F2F1F1;
-    border-radius: 2px;
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .4), 0px 1px 1px rgba(0, 0, 0, .1);
-    background-color: #F2F1F1;
-    margin-left: 5px;
-    padding: 10px 12px;
-    margin-top: 6px;
-    line-height: 14px;
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-    display: inline-block;
-    text-align: center;
-  
-    &:hover {
-      background: #F65925; //linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
-      background-color: #F65925; //#ffeca0;
-    }
-  }
-
   .button {
     border: 1px solid #F2F1F1;
     border-radius: 2px;
@@ -255,7 +234,7 @@ header {
   .fork {
     position:fixed;
     left:50%;
-    margin-left:-565px;
+    margin-left:-345px;
     padding: 10px 12px;
     margin-top: 6px;
     line-height:14px;
@@ -571,4 +550,55 @@ footer {
   height: 2px;
   background-color: #cccccc;
   border-radius: 1px;
+}
+
+.aip_status {
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.draft {
+  @extend .aip_status;
+  background-color: #fffbea;
+  border: solid 1px #f1c40f;
+}
+
+.review {
+  @extend .aip_status;
+  background-color: #f0f7fb;
+  border: solid 1px #3498db;
+}
+
+.proposed {
+  @extend .aip_status;
+  background-color: #edd5f6; //f0f7fb;
+  border: solid 1px #b800fa;
+}
+
+.active_proposal {
+  @extend .aip_status;
+  background-color: #e7f6f0;
+  border: solid 1px #27ae60;
+}
+
+.on_hold {
+  @extend .aip_status;
+  background-color: #ffdead;
+  border: solid 1px #ffee00;
+}
+
+.obsolete {
+  @extend .aip_status;
+  background-color: #ffdead;
+  border: solid 1px #ff6700;
+}
+
+.rejected {
+  @extend .aip_status;
+  background-color: #f9e7e5;
+  border: solid 1px #e02612;
 }

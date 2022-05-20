@@ -6,14 +6,14 @@ author: <a comma separated list of the author's or authors' name + GitHub userna
 status: Draft [All new proposals should be set to Draft]
 type: <Core, Layer 1, Interface, Ecosystem, or Informational>
 created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-requires: <EIP number(s)> (*optional)
+requires: <AIP number(s)> (*optional)
 ---
 
 This is the suggested template for new AIPs.
 
-Note that an AIP number will be assigned by an editor. When opening a pull request to submit your EIP, please use an abbreviated title in the filename, `eip-draft_title_abbrev.md`.
+Note that an AIP number will be assigned by an editor. When opening a pull request to submit your AIP, please use an abbreviated title in the filename, `aip-draft_title_abbrev.md`.
 
-The title should be 44 characters or less. It should not repeat the EIP number in title, irrespective of the category.
+The title should be 44 characters or less. It should not repeat the AIP number in title, irrespective of the category.
 
 ## Abstract/Summary
 
