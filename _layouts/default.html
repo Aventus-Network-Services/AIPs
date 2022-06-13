@@ -14,7 +14,7 @@
         {% if page.status == undefined %}
         <a href="{{ site.github.aip_repo }}" class="button fork"><strong>View On GitHub</strong></a>
         {% elsif page.status != undefined %}
-        <a href="{{ site.github.aip_repo }}/blob/master/AIP/submissions/AIP-{{ page.aip}}/AIP-{{ page.aip}}.md" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="{{ site.github.aip_repo }}/blob/master/AIP/submissions/AIP-{{page.aip}}.md" class="button fork"><strong>View On GitHub</strong></a>
         {% endif %}
 
         <span class="downloads">
@@ -23,7 +23,6 @@
             <a href="/AIPs/core.html" class="button"><strong>Core</strong></a>
             <a href="/AIPs/informational.html" class="button"><strong>Informational</strong></a>
         </span>
-        <!-- <a href="https://www.aventus.io/"><span id="logo"></a> -->
     </div>
     <!-- end banner -->
 
@@ -122,7 +121,6 @@
             </table>
             {% endif %}
 
-            <!-- {{ content }} -->
 
             {% include anchor_headings.html html=content anchorClass="anchor-link" beforeHeading=true %}
             {% if page.status == "Active" or page.status == "Obsolete" or page.status == "Draft" %}
@@ -135,7 +133,6 @@
             <p>{% include authorlist.html authors=page.author %}, "AIP-{{ page.aip | xml_escape }}: {{ page.title | xml_escape
                 }}{% if page.status == "Draft" or page.status == "" %} [DRAFT]{% endif %}," <em>Aventus Improvement
                     Proposals</em>, {{ page.created | date: "%B %Y" }}. [Online serial].
-                <!-- Available: https://aips.aventus.org/AIP/submissions/AIP-{{ page.aip | xml_escape }}. -->
             </p>
             {% endif %}
         </section>
@@ -144,7 +141,7 @@
             <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
             {% endif %}
             <p>Check out our
-            <a href="https://github.com/AventusProtocolFoundation/docs/blob/master/resources/Aventus%20Network%20Technical%20Whitepaper.pdf">WHITEPAPER</a>, <a href="https://www.aventus.io/">Website</a> & <a href="https://aventus-network-services.github.io/avn-gateway-docs/">API</a></p>
+            <a href="https://github.com/AventusProtocolFoundation/docs/blob/master/resources/Aventus%20Network%20Technical%20Whitepaper.pdf">WHITEPAPER</a>, <a href="https://www.aventus.io/">Website</a>, <a href="https://github.com/Aventus-Network-Services/avn-node">Code</a> & <a href="https://aventus-network-services.github.io/avn-gateway-docs/">API</a></p>
         </footer>
     </div>
 
