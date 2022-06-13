@@ -79,7 +79,7 @@ fn signed_create_batch(origin,
 }
 ```
 
-Creating a new batch with 50 instances doesn't automatically mint all 50 instances of that NFT. NFTs are minted when needed, for example, at the point of sale. The minting process has a validation step which checks that the batch is listed for sale and that there isn't an attempt to mint more NFTs to a batch than what was stated as the `total_supply`.
+Creating a new batch with a total supply of 50 doesn't automatically mint all 50 instances of that NFT. NFTs are minted when needed, for example, at the point of sale. The minting process has a validation step which checks that the batch is listed for sale and that there isn't an attempt to mint more NFTs to a batch than what was stated as the `total_supply`.
 
 ```rust
 pub fn validate_mint_batch_nft_request<T: Config>(
