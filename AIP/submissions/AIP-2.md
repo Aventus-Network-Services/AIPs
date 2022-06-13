@@ -150,7 +150,7 @@ pub fn encode_list_batch_for_sale_params<T: Config>(
 }
 ```
 
-List a batch NFT for sale checks that the transaction originator is the `creator` of the batch NFT and the batch does exist. The batch can be relisted by the creator as long as there are free (unsold) nfts in the batch.
+List a batch NFT for sale checks that the transaction originator is the `creator` of the batch and the batch does exist. The batch can be relisted by the creator as long as there are free (unsold) nfts in the batch.
 
 ```rust
 #[weight = T::WeightInfo::proxy_signed_list_batch_for_sale()]
