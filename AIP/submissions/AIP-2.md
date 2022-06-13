@@ -22,7 +22,7 @@ This includes the creation of public endpoints to process batch sales. It is des
 
 Both `NftInfoId` and `NftBatchId` are `U256` linking to structs that define the properties of the NFT. The structure for minting batch NFTs is similar to that for minting a single NFT. When minting a single NFT, the `total_supply` is set to `1` but with minting batch NFTs,the `total_supply` determines the max number of instances that can be minted in a batch. Given that all data about a batch must be supplied at the batch creation stage, the `royalties` set apply to all nfts in the batch and is immutable.
 
-The `creator` here is the AvN account that creates/mints the batch NFT. The `creator` retains ownership of that batch until all the NFTs are minted. When minting a single NFT, the `creator` is defined as `creator: None`.
+The `creator` here is the AvN account that creates the batch. The `creator` retains ownership of that batch until all the NFTs are minted. When minting a single NFT, the `creator` is defined as `creator: None`.
 
 ```rust
 pub fn create_batch<T: Config>(
