@@ -20,7 +20,7 @@ This standard is designed and created to introduce support for the minting and s
 
 This includes the creation of public endpoints to process batch sales. It is designed to be as generic as possible when dealing with batch nfts i.e. it doesn’t assume anything about how or where these nfts will be sold. Each batch can hold a single nft to an unlimited number of nfts.
 
-Both `NftInfoId` and `NftBatchId` are `U256` linking to structs that define the properties of the NFT. The structure for minting batch NFTs is similar to that for minting a single NFT. When minting a single NFT, the `total_supply` is set to `1` but with minting batch NFTs,the `total_supply` determines the max number of instances that can be minted in a batch. Given that all data about a batch must be supplied at the minting stage, the `royalties` set apply to all nfts in the batch and is immutable.
+Both `NftInfoId` and `NftBatchId` are `U256` linking to structs that define the properties of the NFT. The structure for minting batch NFTs is similar to that for minting a single NFT. When minting a single NFT, the `total_supply` is set to `1` but with minting batch NFTs,the `total_supply` determines the max number of instances that can be minted in a batch. Given that all data about a batch must be supplied at the batch creation stage, the `royalties` set apply to all nfts in the batch and is immutable.
 
 The `creator` here is the AvN account that creates/mints the batch NFT. The `creator` retains ownership of that batch until all the NFTs are minted. When minting a single NFT, the `creator` is defined as `creator: None`.
 
