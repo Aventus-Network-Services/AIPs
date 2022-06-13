@@ -39,7 +39,7 @@ pub fn create_batch<T: Config>(
 }
 ```
 
-The `t1_authority` is the address of a smart contract that manages the NFT, in this case, an Ethereum smart contract most likely linked to an NFT marketplace. This field cannot be left empty during minting.
+The `t1_authority` is the address of a smart contract that manages the NFT, in this case, an Ethereum smart contract most likely linked to an NFT marketplace. This field cannot be left empty during batch creation.
 
 ```rust
 /// Creates a new batch
