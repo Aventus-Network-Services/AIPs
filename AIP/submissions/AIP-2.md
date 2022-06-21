@@ -250,7 +250,7 @@ This standard is backward compatible with [AIP-1](./AIP-1).
 
 ## Tests
 
-All tests can be found [HERE](https://github.com/Aventus-Network-Services/avn-node/tree/master/aventus-frame-pallets/nft-manager/src/tests)
+The batch NFT tests can be found [HERE](../../assets/AIP-2/batch_nft_tests.rs).
 
 ## Reference Implementation
 
