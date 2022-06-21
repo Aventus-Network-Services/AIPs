@@ -2,7 +2,7 @@
 layout: default
 aip: 2
 title: Batch-NFT Standard
-status: Draft
+status: Proposed
 type: Core
 author: Aventus Network <info@aventus.io>
 created: 2022-06-10
