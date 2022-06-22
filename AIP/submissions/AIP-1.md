@@ -146,4 +146,4 @@ This pallet does not build on any previous NFT implementation in the Aventus eco
 
 ## Copyright
 
-Copyright and related rights waived via [CC0](../../../LICENSE)
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
