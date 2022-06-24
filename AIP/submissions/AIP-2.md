@@ -2,7 +2,7 @@
 layout: default
 aip: 2
 title: Batch-NFT Standard
-status: Proposed
+status: Active
 type: Core
 author: Aventus Network <info@aventus.io>
 created: 2022-06-10
@@ -260,4 +260,4 @@ This proposal is dependent on the following AIPs below:
 
 ## Copyright
 
-Copyright and related rights waived via [CC0](../../../LICENSE)
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
