@@ -261,3 +261,11 @@ This proposal is dependent on the following AIPs below:
 ## Copyright
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+## Comments
+
+<script src="https://giscus.app/client.js" data-repo="Aventus-Network-Services/AIPs" data-repo-id="R_kgDOHmuWWg"
+    data-category="Submissions" data-category-id="DIC_kwDOHmuWWs4CQD2G" data-mapping="title" data-reactions-enabled="1"
+    data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy"
+    crossorigin="anonymous" async>
+    </script>
