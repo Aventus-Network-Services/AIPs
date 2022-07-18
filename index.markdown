@@ -5,7 +5,7 @@ title: Aventus Improvement Proposals
 
 # Aventus Improvement Proposals (AIPs)
 
-AIP describes standards for the Aventus Ecosystem, including core protocol specifications and processes. These AIPs are technical communication processed off-chain and recognised formally. This is not a substitute for the governance process run here but it is a collection of sound and forward-thinking solutions and functionalities for the network. However, they do not represent a commitment of any form towards existing projects.
+AIP describes standards for the Aventus Ecosystem, including core protocol specifications and processes. These AIPs are technical communication processed off-chain and recognised formally. This is not a substitute for the governance process run [here](https://gov.aventus.io/#/) but it is a collection of sound and forward-thinking solutions and functionalities for the network. However, they do not represent a commitment of any form towards existing projects.
 
 ## Contributing
 
