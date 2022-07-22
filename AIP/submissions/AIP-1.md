@@ -21,7 +21,7 @@ The initial motivation for this standard was the desire and urgency to have NFT 
 
 There are several properties that aid in the identification of an NFT such as the nft_id, origin, and unique_external_ref. The first two variables provide information about the NFT while the third provides a reference to the external location of the related NFT. The owner property of the NFT provides the provenance history of the NFT, ensuring that the ownership history of the NFT can be tracked. This provenance empowers the Blockchain to pay out Royalties.
 
-```sh
+```rust
 fn mint_single_nft(
     origin,
     nft_id: NftId,
@@ -33,7 +33,7 @@ fn mint_single_nft(
 
 The above function signature describes the functionality of minting batch NFT on the Aventus blockchain. There is just one addition to the function signature for the batch NFT which is the batch_id which identifies the batch of NFTs.
 
-```sh
+```rust
 fn mint_batch_nft(
    origin,
    nft_id: NftId,
@@ -51,7 +51,7 @@ The two code snippets above are function signatures.
 
 NFT details are understood as two structs, the first contains "external" properties of the NFT such as the owner address `AccountId`, the external reference `unique_external_ref`, etc.
 
-```sh
+```rust
 pub struct Nft<AccountId: Member> {
     /// Unique identifier of a nft
     pub nft_id: NftId,
@@ -72,7 +72,7 @@ pub struct Nft<AccountId: Member> {
 
 The second struct defines the lower level info properties of the NFT such as the royalties `royalties` and total supply `total_supply`, etc.
 
-```sh
+```rust
 pub struct NftInfo {
     /// Unique identifier of this information
     pub info_id: NftInfoId,
@@ -91,7 +91,7 @@ pub struct NftInfo {
 
 When a new single NFT is minted, the `batch_id` in the return block below is set to None as the single NFT would not be part of a batch of NFTs.
 
-```sh
+```rust
 pub fn new(info_id: NftInfoId, royalties: Vec<Royalty>, t1_authority: H160) -> Self {
     return NftInfo {
         info_id,
@@ -105,7 +105,7 @@ pub fn new(info_id: NftInfoId, royalties: Vec<Royalty>, t1_authority: H160) -> S
 
 The code block below is a direct snippet from the pallet and the comments signified by the preceding “///” are there to provide you with a clearer insight into the workings of the line of code.
 
-```sh
+```rust
 decl_storage! {
 trait Store for Module<T: Trait> as NftManager {
 /// A mapping between NFT Id and data
@@ -147,11 +147,3 @@ This pallet does not build on any previous NFT implementation in the Aventus eco
 ## Copyright
 
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-
-## Comments
-
-<script src="https://giscus.app/client.js" data-repo="Aventus-Network-Services/AIPs" data-repo-id="R_kgDOHmuWWg"
-    data-category="Submissions" data-category-id="DIC_kwDOHmuWWs4CQD2G" data-mapping="title" data-reactions-enabled="1"
-    data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy"
-    crossorigin="anonymous" async>
-    </script>
