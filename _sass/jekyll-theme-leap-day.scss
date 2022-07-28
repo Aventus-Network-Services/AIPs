@@ -8,6 +8,7 @@ by Matt Graham
 @import "rouge-base16-dark";
 
 body {
+  // font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font:14px/22px 'Josefin Sans', sans-serif;
   color:#2b2b2b;
   font-weight:300;
@@ -177,6 +178,7 @@ header {
   min-height: 76px;
 
   h1 {
+    // font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 48px;
     font-family: 'Josefin Sans', sans-serif;
     color: #f3f3f3;
@@ -284,6 +286,16 @@ header {
       }
     }
   }
+
+  // #logo {
+  //   position:absolute;
+  //   height: 36px;
+  //   width: 50px;
+  //   right:7px;
+  //   top:7px;
+  //   display: block;
+  //   background: url(../images/favicon.png);
+  // }
 }
 
 section {
@@ -320,6 +332,9 @@ nav {
     li {
       padding: 5px 0px;
       line-height: 16px;
+      // padding-right:17px;
+      // position:relative;
+      // right:-12px;
 
       &.tag-h1 {
         font-size: 1.2em;
@@ -347,6 +362,11 @@ nav {
 
       &:hover { color: #999; }
     }
+
+    // .active {
+    //   border-right:solid 4px #39C;
+    //   padding-right:13px;
+    // }
   }
 }
 
@@ -407,6 +427,9 @@ footer {
     .fork {
     }
 
+    // #logo {
+    //   margin-right: 15px;
+    // }
   }
 
   section {
@@ -575,6 +598,7 @@ footer {
         background-color: #F2F1F1;
       }
     }
+  // #banner { display: none;}
   header ul {
     display: none;;
   }
