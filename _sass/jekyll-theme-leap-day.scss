@@ -1,8 +1,3 @@
-/*
-Leap Day for GitHub Pages
-by Matt Graham
-*/
-
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark";
@@ -170,7 +165,7 @@ header {
   right:0;
   width: 100%;
   text-align: center;
-  background: #1D2733; //#F2F1F1;
+  background: #1D2733; 
   box-shadow: 1px 0px 2px rgba(0,0,0,.75);
   z-index:99;
   -webkit-font-smoothing:antialiased;
@@ -228,8 +223,8 @@ header {
     text-align:center;
 
     &:hover {
-      background: #F65925; //linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
-      background-color: #F65925; //#ffeca0;
+      background: #F65925;
+      background-color: #F65925; 
     }
   }
 
@@ -257,7 +252,7 @@ header {
 
   .downloads {
     float: right;
-    margin:0 0px 0 0; //45px
+    margin:0 0px 0 0;
 
     span {
       float:left;
@@ -406,7 +401,6 @@ footer {
 
     .fork {
     }
-
   }
 
   section {
@@ -651,7 +645,7 @@ footer {
 
 .proposed {
   @extend .aip_status;
-  background-color: #edd5f6; //f0f7fb;
+  background-color: #edd5f6;
   border: solid 1px #b800fa;
 }
 
