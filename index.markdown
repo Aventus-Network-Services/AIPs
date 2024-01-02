@@ -43,4 +43,4 @@ There are five types of AIP:
 
 - [Informational](./informational.html) ({{site.pages|where:"type","Informational"|size}})  - Describes an Aventus design issue, or provides general guidelines or information to the Aventus community, but does not propose a new feature.
 
-To understand more about the current state of the Aventus network, check out our [whitepaper](https://github.com/AventusProtocolFoundation/docs/blob/master/resources/Aventus%20Network%20Technical%20Whitepaper.pdf).
+To understand more about the current state of the Aventus network, check out our [whitepaper](https://github.com/Aventus-Network-Services/documentation/blob/main/resources/Aventus%20Technical%20Whitepaper%20July%202023%20Version%203.pdf).
