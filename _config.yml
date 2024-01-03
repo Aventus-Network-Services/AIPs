@@ -1,6 +1,6 @@
 title: Aventus Improvement Proposals
 description: >- # this means to ignore newlines until "baseurl:"
-    Aventus. The customisable layer-2 blockchain network that lets you build on Ethereum at scale to process transactions at 100x the speed and 1% of the cost.
+    Aventus is a scalable, sustainable and interoperable parachain that makes building on Polkadot, Ethereum and beyond accessible for companies in any ecosystem.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://aips.aventus.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aventusnetwork
